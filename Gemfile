@@ -15,11 +15,16 @@ gem 'google_drive'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'simple_form'
-group :development do
+group :development, :test do
+  gem "letter_opener"
   gem 'better_errors'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem "factory_girl_rails"
+  gem 'guard-rspec'
+  gem "launchy"
+  gem 'database_cleaner'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
-  gem 'guard-bundler'
-  gem 'guard-rails'
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
